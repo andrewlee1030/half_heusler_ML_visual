@@ -14,5 +14,7 @@ The main purpose of my plot is to show a separation in probability synthesis bet
 
 Full instructions on interacting with the plot can be found on the plot itself.
 
+# Insights Gained
 
+Using this tool, I have been able to better identify outliers in the data. For example, LiVBi at (0.44,0.39), NbSnSb at (0.6,0.56), and LiGaGe at (0.69,0) are interesting cases.
 
