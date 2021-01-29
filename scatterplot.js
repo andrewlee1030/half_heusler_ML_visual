@@ -2,7 +2,7 @@
 var data;
 
 // define the size of the svg
-var margin = {top: 100, right: 100, bottom: 400, left: 100},
+var margin = {top: 100, right: 100, bottom: 100, left: 100},
 	width = 1200;// - margin.left - margin.right,
 	height = 600;// - margin.top - margin.bottom;
 
