@@ -72,7 +72,7 @@ function init(inputData){
 		.attr("y", -40)
 		.attr("dy", ".71em")
 		.style("text-anchor", "end")
-		.text("Thermal Conductivity (W/(m*K))")
+		.text("DFT Stability (eV/atom)")
 
 
 //add plot title
@@ -107,7 +107,7 @@ var plot_title = svg
 			.html(` Composition: <b> ${d.Composition} </b> <br/>
 				 Exp. Structure: <b> ${d['Experimental Structure']} </b> <br/> 
 				 Synth. Probability: <b> ${parseFloat(d['Synth. Probability']).toFixed(2)} </b> <br/>
-				 Thermal Conductivity: <b> ${parseFloat(d['Half Heusler (F-43m)']).toFixed(2)} </b> <br/>
+				 DFT Stability: <b> ${parseFloat(d['Half Heusler (F-43m)']).toFixed(2)} </b> <br/>
 				 Electron Count: <b> ${parseFloat(d['Electron Count']).toFixed(0)}`)
 		
 }
@@ -230,9 +230,9 @@ var plot_title = svg
 			.style('top',y(0) + 200)
 			.style('width',width)
 			.style("display", 'block')
-			.html(`A composition's synthesizability in the half heusler structure has traditionally been determined by its thermal conductivity. 
-				Here, we present synthesizabilty predictions generated from a model trained on a composition's thermal conductivity in addition to many compositional features.
-				The predicted synthesizabilities are compared against their thermal conductivities in this plot, and are colored according to their true label.
+			.html(`A composition's synthesizability in the half heusler structure has traditionally been determined by its DFT stability. 
+				Here, we present synthesizabilty predictions generated from a model trained on a composition's DFT stability in addition to many compositional features.
+				The predicted synthesizabilities are compared against their DFT stabilities in this plot, and are colored according to their true label.
 				The precision and recall of the model is calculated for a given variable synthesizability threshold, above which a composition is classified as a half heusler.`)
 
 	console.log(d3.select('#explanation').node())
