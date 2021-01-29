@@ -52,7 +52,5 @@
 #explanation {
 	position:absolute;
 	background:rgba(256,256,256);
-	border:3px solid black;
-	font-family:var(--font_fam);
-	font-size:30;
+	font-size:18;
 }

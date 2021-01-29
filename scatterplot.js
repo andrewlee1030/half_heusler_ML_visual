@@ -225,8 +225,17 @@ var plot_title = svg
 		})
 
 
+	d3.select('#explanation')
+			.style('left',x(0) + 100)
+			.style('top',y(0) + 200)
+			.style('width',width)
+			.style("display", 'block')
+			.html(`A composition's synthesizability in the half heusler structure has traditionally been determined by its thermal conductivity. 
+				Here, we present synthesizabilty predictions generated from a model trained on a composition's thermal conductivity in addition to many compositional features.
+				The predicted synthesizabilities are compared against their thermal conductivities in this plot, and are colored according to their true label.
+				The precision and recall of the model is calculated for a given variable synthesizability threshold, above which a composition is classified as a half heusler.`)
 
-
+	console.log(d3.select('#explanation').node())
 
 	d3.select('#prec_recall')
 		.style('left',x(1) - 150)
@@ -314,8 +323,8 @@ var help_box_text = svg
 
     	return [precision.toFixed(2), recall.toFixed(2)]
 
-    	}
 
+    	}
 
 
 
