@@ -166,8 +166,8 @@ var plot_title = svg
 	             line_text.attr('x',x1New - 70)
 	             line_text.text(`Threshold: ${threshold}`)
 
-	             d3.select('#prec_recall').html(`Precision: ${calc_stats(data,threshold)[0].toString()} <br/>
-	             	Recall: ${calc_stats(data,threshold)[1].toString()}`)
+	             d3.select('#prec_recall').html(`Precision: <b> ${calc_stats(data,threshold)[0].toString()} </b> <br/>
+	             	Recall: <b> ${calc_stats(data,threshold)[1].toString()} </b>`)
 
 	             }
 	             }).on('end', function() {}); 
@@ -241,8 +241,8 @@ var plot_title = svg
 		.style('left',x(1) - 150)
 		.style('top',y(1) + 70)
 		.style("display", 'block')
-		.html(`Precision: ${calc_stats(data,x.invert(parseFloat(line.attr('x1'))).toFixed(2))[0].toString()} <br/>
-			Recall: ${calc_stats(data,x.invert(parseFloat(line.attr('x1'))).toFixed(2))[1].toString()}`)
+		.html(`Precision: <b> ${calc_stats(data,x.invert(parseFloat(line.attr('x1'))).toFixed(2))[0].toString()} </b> <br/>
+			Recall: <b> ${calc_stats(data,x.invert(parseFloat(line.attr('x1'))).toFixed(2))[1].toString()} </b>`)
 
 var help_box_text = svg
 	              .append("text")
