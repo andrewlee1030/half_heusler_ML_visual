@@ -230,10 +230,10 @@ var plot_title = svg
 			.style('top',y(0) + 200)
 			.style('width',width)
 			.style("display", 'block')
-			.html(`A composition's synthesizability in the half heusler structure has traditionally been determined by its DFT stability. 
-				Here, we present synthesizabilty predictions generated from a model trained on a composition's DFT stability in addition to many compositional features.
-				The predicted synthesizabilities are compared against their DFT stabilities in this plot, and are colored according to their true label.
-				The precision and recall of the model is calculated for a given variable synthesizability threshold, above which a composition is classified as a half heusler.`)
+			// .html(`A composition's synthesizability in the half heusler structure has traditionally been determined by its DFT stability. 
+			// 	Here, we present synthesizabilty predictions generated from a model trained on a composition's DFT stability in addition to many compositional features.
+			// 	The predicted synthesizabilities are compared against their DFT stabilities in this plot, and are colored according to their true label.
+			// 	The precision and recall of the model is calculated for a given variable synthesizability threshold, above which a composition is classified as a half heusler.`)
 
 	console.log(d3.select('#explanation').node())
 
