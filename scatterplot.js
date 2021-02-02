@@ -60,7 +60,7 @@ function init(inputData){
 		.attr("x", width -20)
 		.attr("y", 30)
 		.style("text-anchor", "end")
-		.text("Predicted Synthesizability Probability");
+		// .text("Predicted Synthesizability Probability"); // hide for publication
 
 	svg.append("g")
 		.attr("class", "y axis")
@@ -72,7 +72,7 @@ function init(inputData){
 		.attr("y", -40)
 		.attr("dy", ".71em")
 		.style("text-anchor", "end")
-		.text("DFT Stability (eV/atom)")
+		//.text("DFT Stability (eV/atom)") // hide for publication
 
 
 //add plot title
@@ -82,7 +82,7 @@ var plot_title = svg
 	              .attr('y',-40)
 	              .attr('font-size',40)
 	              .attr('font-family','sans-serif')
-	              .text('Half Heusler Synthesizability Predictions vs DFT Energies')
+	              //.text('Half Heusler Synthesizability Predictions vs DFT Energies') // hide for publication
 
 
 	//add the data and the legend to the scatter plot
@@ -106,8 +106,8 @@ var plot_title = svg
 			.style("display", 'block')
 			.html(` Composition: <b> ${d.Composition} </b> <br/>
 				 Exp. Structure: <b> ${d['Experimental Structure']} </b> <br/> 
-				 Synth. Probability: <b> ${parseFloat(d['Synth. Probability']).toFixed(2)} </b> <br/>
-				 DFT Stability: <b> ${parseFloat(d['Half Heusler (F-43m)']).toFixed(2)} </b> <br/>
+				 X: <b> ${parseFloat(d['Synth. Probability']).toFixed(2)} </b> <br/>
+				 Y: <b> ${parseFloat(d['Half Heusler (F-43m)']).toFixed(2)} </b> <br/>
 				 Electron Count: <b> ${parseFloat(d['Electron Count']).toFixed(0)}`)
 		
 }
